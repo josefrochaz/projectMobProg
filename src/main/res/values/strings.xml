@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Food and Beverage App</string>
+    <string name="pick_your_favorite_nfood_beverage_now"><![CDATA[Pick Your Favorite Food & Beverage Now!]]></string>
+    <string name="todo">TODO</string>
+</resources>

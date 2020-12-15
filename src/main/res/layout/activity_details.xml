@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF9F9"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/btn_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/bookmark_button" />
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_bookmark"
+        app:srcCompat="@drawable/share_button" />
+
+    <ImageView
+        android:id="@+id/iv_burger"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_below="@id/btn_back"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/lawless_burger" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_burger"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:text="4.5"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tv_bookmarked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_burger"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="530"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_burger"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_bookmarked"
+        android:text="2250"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rating"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Rating"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_bookmarked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bookmarked"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Bookmarked"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txt_bookmarked"
+        android:text="Order"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_title_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_rating"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Lawless Burgerbar"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/btn_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_details"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/min_button" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_details"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/btn_min"
+        android:text="01"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_details"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/tv_count"
+        app:srcCompat="@drawable/add_button" />
+
+    <TextView
+        android:id="@+id/tv_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_details"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        android:text="Rp135.000" />
+
+    <ImageView
+        android:id="@+id/iv_cartButton"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/tv_detail_price"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/cart_button" />
+
+
+</RelativeLayout>
